@@ -1,0 +1,63 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
+| Date         : Wed Apr 24 19:11:37 2019
+| Host         : 500235e510a4 running 64-bit Ubuntu 16.04.6 LTS
+| Command      : report_timing -file ./report/latcherfloat_timing_synth.rpt
+| Design       : latcherfloat
+| Device       : 7z100-ffv900
+| Speed File   : -1  PRODUCTION 1.11 2014-09-11
+------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             8.305ns  (required time - arrival time)
+  Source:                 Block_proc_U0/state_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Block_proc_U0/tmp_reg[0]/CE
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        1.326ns  (logic 0.350ns (26.395%)  route 0.976ns (73.605%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        -0.034ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.638ns = ( 10.638 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.672ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=34, unset)           0.672     0.672    Block_proc_U0/ap_clk
+                         FDRE                                         r  Block_proc_U0/state_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.197     0.869 r  Block_proc_U0/state_reg[0]/Q
+                         net (fo=5, unplaced)         0.560     1.429    Block_proc_U0/state_reg_n_0_[0]
+                         LUT3 (Prop_lut3_I0_O)        0.153     1.582 r  Block_proc_U0/in_V_TREADY_INST_0/O
+                         net (fo=32, unplaced)        0.416     1.998    Block_proc_U0/E[0]
+                         FDRE                                         r  Block_proc_U0/tmp_reg[0]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=34, unset)           0.638    10.638    Block_proc_U0/ap_clk
+                         FDRE                                         r  Block_proc_U0/tmp_reg[0]/C
+                         clock pessimism              0.000    10.638    
+                         clock uncertainty           -0.035    10.603    
+                         FDRE (Setup_fdre_C_CE)      -0.300    10.303    Block_proc_U0/tmp_reg[0]
+  -------------------------------------------------------------------
+                         required time                         10.303    
+                         arrival time                          -1.998    
+  -------------------------------------------------------------------
+                         slack                                  8.305    
+
+
+
+

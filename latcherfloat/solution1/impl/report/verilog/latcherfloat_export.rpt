@@ -1,0 +1,19 @@
+
+
+Implementation tool: Xilinx Vivado v.2017.2
+Project:             latcherfloat
+Solution:            solution1
+Device target:       xc7z100ffv900-1
+Report date:         Wed Apr 24 19:11:37 UTC 2019
+
+#=== Post-Synthesis Resource usage ===
+SLICE:            0
+LUT:              3
+FF:              35
+DSP:              0
+BRAM:             0
+SRL:              0
+#=== Final timing ===
+CP required:    10.000
+CP achieved post-synthesis:    1.695
+Timing met
