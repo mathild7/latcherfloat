@@ -7,9 +7,9 @@
 
 `timescale 1 ns / 1 ps 
 
-(* CORE_GENERATION_INFO="latcherfloat,hls_ip_2017_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=1,HLS_INPUT_FIXED=1,HLS_INPUT_PART=xc7z100ffv900-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=dataflow,HLS_SYN_CLOCK=3.096000,HLS_SYN_LAT=0,HLS_SYN_TPT=1,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=37,HLS_SYN_LUT=63}" *)
+(* CORE_GENERATION_INFO="latcherfloatlatcherfloat,hls_ip_2017_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=1,HLS_INPUT_FIXED=1,HLS_INPUT_PART=xc7z100ffv900-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=dataflow,HLS_SYN_CLOCK=3.096000,HLS_SYN_LAT=0,HLS_SYN_TPT=1,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=37,HLS_SYN_LUT=63}" *)
 
-module latcherfloat (
+module latcherfloatlatcherfloat (
         in_V_TDATA,
         out_V_TDATA,
         latch_V,
@@ -45,7 +45,7 @@ wire    ap_sync_continue;
 wire    Block_proc_U0_start_full_n;
 wire    Block_proc_U0_start_write;
 
-Block_proc Block_proc_U0(
+latcherfloatBlock_proc Block_proc_U0(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
     .ap_start(Block_proc_U0_ap_start),
@@ -82,4 +82,4 @@ assign out_V_TDATA = Block_proc_U0_out_V_TDATA;
 
 assign out_V_TVALID = Block_proc_U0_out_V_TVALID;
 
-endmodule //latcherfloat
+endmodule //latcherfloatlatcherfloat

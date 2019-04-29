@@ -29,47 +29,42 @@
 		<link>
 			<name>source</name>
 			<type>2</type>
-			<location>/home/hildeb47/proj/ECE1373_GhostSynth/mods/latcherfloat/latcherfloat/.apc/.src</location>
+			<location>/root/repo/new/ECE1373_GhostSynth/modules/latcherfloat/latcherfloat/.apc/.src</location>
 		</link>
 		<link>
 			<name>testbench</name>
 			<type>2</type>
-			<location>/home/hildeb47/proj/ECE1373_GhostSynth/mods/latcherfloat/latcherfloat/.apc/.tb</location>
-		</link>
-		<link>
-			<name>.reference/latcherfloat.xdc</name>
-			<type>1</type>
-			<location>/home/hildeb47/proj/ECE1373_GhostSynth/mods/latcherfloat/latcherfloat/solution1/impl/vhdl/latcherfloat.xdc</location>
+			<location>/root/repo/new/ECE1373_GhostSynth/modules/latcherfloat/latcherfloat/.apc/.tb</location>
 		</link>
 		<link>
 			<name>solution1/constraints</name>
 			<type>2</type>
-			<location>/home/hildeb47/proj/ECE1373_GhostSynth/mods/latcherfloat/latcherfloat/solution1/.tcls</location>
+			<location>/root/repo/new/ECE1373_GhostSynth/modules/latcherfloat/latcherfloat/solution1/.tcls</location>
 		</link>
 		<link>
 			<name>source/latcherfloat.cpp</name>
 			<type>1</type>
-			<location>/home/hildeb47/proj/ECE1373_GhostSynth/mods/latcherfloat/latcherfloat.cpp</location>
+			<location>/root/repo/new/ECE1373_GhostSynth/modules/latcherfloat/latcherfloat.cpp</location>
 		</link>
 		<link>
 			<name>source/latcherfloat.h</name>
 			<type>1</type>
-			<location>/home/hildeb47/proj/ECE1373_GhostSynth/mods/latcherfloat/latcherfloat.h</location>
+			<location>/root/repo/new/ECE1373_GhostSynth/modules/latcherfloat/latcherfloat.h</location>
 		</link>
 		<link>
 			<name>solution1/constraints/.xml.directive</name>
 			<type>1</type>
-			<location>/home/hildeb47/proj/ECE1373_GhostSynth/mods/latcherfloat/latcherfloat/solution1/solution1.directive</location>
+			<location>/root/repo/new/ECE1373_GhostSynth/modules/latcherfloat/latcherfloat/solution1/solution1.directive</location>
 		</link>
 		<link>
 			<name>solution1/constraints/directives.tcl</name>
 			<type>1</type>
-			<location>/home/hildeb47/proj/ECE1373_GhostSynth/mods/latcherfloat/latcherfloat/solution1/directives.tcl</location>
+			<location>/root/repo/new/ECE1373_GhostSynth/modules/latcherfloat/latcherfloat/solution1/directives.tcl</location>
 		</link>
 		<link>
 			<name>solution1/constraints/script.tcl</name>
 			<type>1</type>
-			<location>/home/hildeb47/proj/ECE1373_GhostSynth/mods/latcherfloat/latcherfloat/solution1/script.tcl</location>
+			<location>/root/repo/new/ECE1373_GhostSynth/modules/latcherfloat/latcherfloat/solution1/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>

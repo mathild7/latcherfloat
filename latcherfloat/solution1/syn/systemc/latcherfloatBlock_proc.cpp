@@ -5,24 +5,24 @@
 // 
 // ===========================================================
 
-#include "Block_proc.h"
+#include "latcherfloatBlock_proc.h"
 #include "AESL_pkg.h"
 
 using namespace std;
 
 namespace ap_rtl {
 
-const sc_logic Block_proc::ap_const_logic_1 = sc_dt::Log_1;
-const sc_logic Block_proc::ap_const_logic_0 = sc_dt::Log_0;
-const sc_lv<1> Block_proc::ap_ST_fsm_state1 = "1";
-const sc_lv<32> Block_proc::ap_const_lv32_0 = "00000000000000000000000000000000";
-const bool Block_proc::ap_const_boolean_1 = true;
-const sc_lv<2> Block_proc::ap_const_lv2_0 = "00";
-const sc_lv<2> Block_proc::ap_const_lv2_1 = "1";
-const sc_lv<1> Block_proc::ap_const_lv1_1 = "1";
-const sc_lv<2> Block_proc::ap_const_lv2_2 = "10";
+const sc_logic latcherfloatBlock_proc::ap_const_logic_1 = sc_dt::Log_1;
+const sc_logic latcherfloatBlock_proc::ap_const_logic_0 = sc_dt::Log_0;
+const sc_lv<1> latcherfloatBlock_proc::ap_ST_fsm_state1 = "1";
+const sc_lv<32> latcherfloatBlock_proc::ap_const_lv32_0 = "00000000000000000000000000000000";
+const bool latcherfloatBlock_proc::ap_const_boolean_1 = true;
+const sc_lv<2> latcherfloatBlock_proc::ap_const_lv2_0 = "00";
+const sc_lv<2> latcherfloatBlock_proc::ap_const_lv2_1 = "1";
+const sc_lv<1> latcherfloatBlock_proc::ap_const_lv1_1 = "1";
+const sc_lv<2> latcherfloatBlock_proc::ap_const_lv2_2 = "10";
 
-Block_proc::Block_proc(sc_module_name name) : sc_module(name), mVcdFile(0) {
+latcherfloatBlock_proc::latcherfloatBlock_proc(sc_module_name name) : sc_module(name), mVcdFile(0) {
 
     SC_METHOD(thread_ap_clk_no_reset_);
     dont_initialize();
@@ -168,7 +168,7 @@ Block_proc::Block_proc(sc_module_name name) : sc_module(name), mVcdFile(0) {
     ap_reg_ioackin_out_V_TREADY = SC_LOGIC_0;
     static int apTFileNum = 0;
     stringstream apTFilenSS;
-    apTFilenSS << "Block_proc_sc_trace_" << apTFileNum ++;
+    apTFilenSS << "latcherfloatBlock_proc_sc_trace_" << apTFileNum ++;
     string apTFn = apTFilenSS.str();
     mVcdFile = sc_create_vcd_trace_file(apTFn.c_str());
     mVcdFile->set_time_unit(1, SC_PS);
@@ -216,13 +216,13 @@ Block_proc::Block_proc(sc_module_name name) : sc_module(name), mVcdFile(0) {
     }
 }
 
-Block_proc::~Block_proc() {
+latcherfloatBlock_proc::~latcherfloatBlock_proc() {
     if (mVcdFile) 
         sc_close_vcd_trace_file(mVcdFile);
 
 }
 
-void Block_proc::thread_ap_clk_no_reset_() {
+void latcherfloatBlock_proc::thread_ap_clk_no_reset_() {
     if ( ap_rst.read() == ap_const_logic_1) {
         ap_CS_fsm = ap_ST_fsm_state1;
     } else {
@@ -266,35 +266,35 @@ void Block_proc::thread_ap_clk_no_reset_() {
     }
 }
 
-void Block_proc::thread_ap_CS_fsm_state1() {
+void latcherfloatBlock_proc::thread_ap_CS_fsm_state1() {
     ap_CS_fsm_state1 = ap_CS_fsm.read()[0];
 }
 
-void Block_proc::thread_ap_block_state1() {
+void latcherfloatBlock_proc::thread_ap_block_state1() {
     ap_block_state1 = (esl_seteq<1,1,1>(ap_const_logic_0, ap_start.read()) || (esl_seteq<1,1,1>(ap_const_logic_0, in_V_TVALID.read()) && 
   esl_seteq<1,1,1>(ap_const_boolean_1, ap_predicate_op16_read_state1.read())) || esl_seteq<1,1,1>(ap_done_reg.read(), ap_const_logic_1));
 }
 
-void Block_proc::thread_ap_block_state1_io() {
+void latcherfloatBlock_proc::thread_ap_block_state1_io() {
     ap_block_state1_io = (esl_seteq<1,1,1>(ap_const_logic_0, ap_sig_ioackin_out_V_TREADY.read()) && esl_seteq<1,1,1>(ap_const_boolean_1, ap_predicate_op10_write_state1.read()));
 }
 
-void Block_proc::thread_ap_condition_65() {
+void latcherfloatBlock_proc::thread_ap_condition_65() {
     ap_condition_65 = !(esl_seteq<1,1,1>(ap_const_logic_0, ap_start.read()) || (esl_seteq<1,1,1>(ap_const_logic_0, in_V_TVALID.read()) && 
   esl_seteq<1,1,1>(ap_const_boolean_1, ap_predicate_op16_read_state1.read())) || esl_seteq<1,1,1>(ap_done_reg.read(), ap_const_logic_1) || esl_seteq<1,1,1>(ap_const_boolean_1, ap_block_state1_io.read()));
 }
 
-void Block_proc::thread_ap_condition_66() {
+void latcherfloatBlock_proc::thread_ap_condition_66() {
     ap_condition_66 = (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state1.read()) && !(esl_seteq<1,1,1>(ap_const_logic_0, ap_start.read()) || (esl_seteq<1,1,1>(ap_const_logic_0, in_V_TVALID.read()) && 
   esl_seteq<1,1,1>(ap_const_boolean_1, ap_predicate_op16_read_state1.read())) || esl_seteq<1,1,1>(ap_done_reg.read(), ap_const_logic_1) || esl_seteq<1,1,1>(ap_const_boolean_1, ap_block_state1_io.read())));
 }
 
-void Block_proc::thread_ap_condition_97() {
+void latcherfloatBlock_proc::thread_ap_condition_97() {
     ap_condition_97 = (!(esl_seteq<1,1,1>(ap_const_logic_0, ap_start.read()) || (esl_seteq<1,1,1>(ap_const_logic_0, in_V_TVALID.read()) && 
   esl_seteq<1,1,1>(ap_const_boolean_1, ap_predicate_op16_read_state1.read())) || esl_seteq<1,1,1>(ap_done_reg.read(), ap_const_logic_1)) && esl_seteq<1,1,1>(ap_const_logic_1, out_V_TREADY.read()));
 }
 
-void Block_proc::thread_ap_done() {
+void latcherfloatBlock_proc::thread_ap_done() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state1.read()) && 
          !(esl_seteq<1,1,1>(ap_const_logic_0, ap_start.read()) || (esl_seteq<1,1,1>(ap_const_logic_0, in_V_TVALID.read()) && 
   esl_seteq<1,1,1>(ap_const_boolean_1, ap_predicate_op16_read_state1.read())) || esl_seteq<1,1,1>(ap_done_reg.read(), ap_const_logic_1) || esl_seteq<1,1,1>(ap_const_boolean_1, ap_block_state1_io.read())))) {
@@ -304,7 +304,7 @@ void Block_proc::thread_ap_done() {
     }
 }
 
-void Block_proc::thread_ap_idle() {
+void latcherfloatBlock_proc::thread_ap_idle() {
     if ((esl_seteq<1,1,1>(ap_const_logic_0, ap_start.read()) && 
          esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state1.read()))) {
         ap_idle = ap_const_logic_1;
@@ -313,15 +313,15 @@ void Block_proc::thread_ap_idle() {
     }
 }
 
-void Block_proc::thread_ap_predicate_op10_write_state1() {
+void latcherfloatBlock_proc::thread_ap_predicate_op10_write_state1() {
     ap_predicate_op10_write_state1 = (esl_seteq<1,2,2>(state.read(), ap_const_lv2_2) && esl_seteq<1,1,1>(ap_const_lv1_1, tmp_1_nbwritereq_fu_44_p3.read()));
 }
 
-void Block_proc::thread_ap_predicate_op16_read_state1() {
+void latcherfloatBlock_proc::thread_ap_predicate_op16_read_state1() {
     ap_predicate_op16_read_state1 = (esl_seteq<1,2,2>(state.read(), ap_const_lv2_1) && esl_seteq<1,1,1>(tmp_1_1_nbreadreq_fu_59_p3.read(), ap_const_lv1_1));
 }
 
-void Block_proc::thread_ap_ready() {
+void latcherfloatBlock_proc::thread_ap_ready() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state1.read()) && 
          !(esl_seteq<1,1,1>(ap_const_logic_0, ap_start.read()) || (esl_seteq<1,1,1>(ap_const_logic_0, in_V_TVALID.read()) && 
   esl_seteq<1,1,1>(ap_const_boolean_1, ap_predicate_op16_read_state1.read())) || esl_seteq<1,1,1>(ap_done_reg.read(), ap_const_logic_1) || esl_seteq<1,1,1>(ap_const_boolean_1, ap_block_state1_io.read())))) {
@@ -331,7 +331,7 @@ void Block_proc::thread_ap_ready() {
     }
 }
 
-void Block_proc::thread_ap_sig_ioackin_out_V_TREADY() {
+void latcherfloatBlock_proc::thread_ap_sig_ioackin_out_V_TREADY() {
     if (esl_seteq<1,1,1>(ap_const_logic_0, ap_reg_ioackin_out_V_TREADY.read())) {
         ap_sig_ioackin_out_V_TREADY = out_V_TREADY.read();
     } else {
@@ -339,7 +339,7 @@ void Block_proc::thread_ap_sig_ioackin_out_V_TREADY() {
     }
 }
 
-void Block_proc::thread_in_V_TDATA_blk_n() {
+void latcherfloatBlock_proc::thread_in_V_TDATA_blk_n() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state1.read()) && 
          esl_seteq<1,2,2>(state.read(), ap_const_lv2_1) && 
          esl_seteq<1,1,1>(tmp_1_1_nbreadreq_fu_59_p3.read(), ap_const_lv1_1))) {
@@ -349,7 +349,7 @@ void Block_proc::thread_in_V_TDATA_blk_n() {
     }
 }
 
-void Block_proc::thread_in_V_TREADY() {
+void latcherfloatBlock_proc::thread_in_V_TREADY() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state1.read()) && 
          esl_seteq<1,1,1>(ap_const_boolean_1, ap_predicate_op16_read_state1.read()) && 
          !(esl_seteq<1,1,1>(ap_const_logic_0, ap_start.read()) || (esl_seteq<1,1,1>(ap_const_logic_0, in_V_TVALID.read()) && 
@@ -360,15 +360,15 @@ void Block_proc::thread_in_V_TREADY() {
     }
 }
 
-void Block_proc::thread_latch_V_read_read_fu_38_p2() {
+void latcherfloatBlock_proc::thread_latch_V_read_read_fu_38_p2() {
     latch_V_read_read_fu_38_p2 = latch_V.read();
 }
 
-void Block_proc::thread_out_V_TDATA() {
+void latcherfloatBlock_proc::thread_out_V_TDATA() {
     out_V_TDATA = tmp.read();
 }
 
-void Block_proc::thread_out_V_TDATA_blk_n() {
+void latcherfloatBlock_proc::thread_out_V_TDATA_blk_n() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state1.read()) && 
          esl_seteq<1,2,2>(state.read(), ap_const_lv2_2) && 
          esl_seteq<1,1,1>(ap_const_lv1_1, tmp_1_nbwritereq_fu_44_p3.read()))) {
@@ -378,7 +378,7 @@ void Block_proc::thread_out_V_TDATA_blk_n() {
     }
 }
 
-void Block_proc::thread_out_V_TVALID() {
+void latcherfloatBlock_proc::thread_out_V_TVALID() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state1.read()) && 
          esl_seteq<1,1,1>(ap_const_boolean_1, ap_predicate_op10_write_state1.read()) && 
          !(esl_seteq<1,1,1>(ap_const_logic_0, ap_start.read()) || (esl_seteq<1,1,1>(ap_const_logic_0, in_V_TVALID.read()) && 
@@ -390,19 +390,19 @@ void Block_proc::thread_out_V_TVALID() {
     }
 }
 
-void Block_proc::thread_state_load_load_fu_73_p1() {
+void latcherfloatBlock_proc::thread_state_load_load_fu_73_p1() {
     state_load_load_fu_73_p1 = state.read();
 }
 
-void Block_proc::thread_tmp_1_1_nbreadreq_fu_59_p3() {
+void latcherfloatBlock_proc::thread_tmp_1_1_nbreadreq_fu_59_p3() {
     tmp_1_1_nbreadreq_fu_59_p3 =  (sc_lv<1>) (in_V_TVALID.read());
 }
 
-void Block_proc::thread_tmp_1_nbwritereq_fu_44_p3() {
+void latcherfloatBlock_proc::thread_tmp_1_nbwritereq_fu_44_p3() {
     tmp_1_nbwritereq_fu_44_p3 =  (sc_lv<1>) (out_V_TREADY.read());
 }
 
-void Block_proc::thread_ap_NS_fsm() {
+void latcherfloatBlock_proc::thread_ap_NS_fsm() {
     switch (ap_CS_fsm.read().to_uint64()) {
         case 1 : 
             ap_NS_fsm = ap_ST_fsm_state1;

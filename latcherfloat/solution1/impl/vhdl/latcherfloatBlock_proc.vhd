@@ -9,7 +9,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
-entity Block_proc is
+entity latcherfloatBlock_proc is
 port (
     ap_clk : IN STD_LOGIC;
     ap_rst : IN STD_LOGIC;
@@ -28,7 +28,7 @@ port (
 end;
 
 
-architecture behav of Block_proc is 
+architecture behav of latcherfloatBlock_proc is 
     constant ap_const_logic_1 : STD_LOGIC := '1';
     constant ap_const_logic_0 : STD_LOGIC := '0';
     constant ap_ST_fsm_state1 : STD_LOGIC_VECTOR (0 downto 0) := "1";

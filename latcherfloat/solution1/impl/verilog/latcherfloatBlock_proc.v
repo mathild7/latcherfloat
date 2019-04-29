@@ -7,7 +7,7 @@
 
 `timescale 1 ns / 1 ps 
 
-module Block_proc (
+module latcherfloatBlock_proc (
         ap_clk,
         ap_rst,
         ap_start,
@@ -245,4 +245,4 @@ assign tmp_1_1_nbreadreq_fu_59_p3 = in_V_TVALID;
 
 assign tmp_1_nbwritereq_fu_44_p3 = out_V_TREADY;
 
-endmodule //Block_proc
+endmodule //latcherfloatBlock_proc

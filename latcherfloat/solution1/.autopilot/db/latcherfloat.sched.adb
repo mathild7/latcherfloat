@@ -167,14 +167,14 @@
 						<id>16</id>
 						<name></name>
 						<fileName>latcherfloat.cpp</fileName>
-						<fileDirectory>/home/hildeb47/proj/ECE1373_GhostSynth/mods/latcherfloat</fileDirectory>
+						<fileDirectory>/root/repo/new/ECE1373_GhostSynth/modules/latcherfloat</fileDirectory>
 						<lineNumber>61</lineNumber>
 						<contextFuncName>latcherfloat</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item class_id="11" tracking_level="0" version="0">
-								<first>/home/hildeb47/proj/ECE1373_GhostSynth/mods/latcherfloat</first>
+								<first>/root/repo/new/ECE1373_GhostSynth/modules/latcherfloat</first>
 								<second class_id="12" tracking_level="0" version="0">
 									<count>1</count>
 									<item_version>0</item_version>

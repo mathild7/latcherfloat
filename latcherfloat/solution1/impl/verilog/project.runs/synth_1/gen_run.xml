@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z100ffv900-1" LaunchTime="1556132989">
-  <File Type="VDS-TIMING-PB" Name="latcherfloat_timing_summary_synth.pb"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="latcherfloat_timing_summary_synth.rpt"/>
-  <File Type="RDS-RDS" Name="latcherfloat.vds"/>
-  <File Type="PA-TCL" Name="latcherfloat.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="latcherfloat_drc_synth.rpt"/>
-  <File Type="RDS-UTIL" Name="latcherfloat_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="latcherfloat_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="latcherfloat.dcp"/>
+<GenRun Id="synth_1" LaunchPart="xc7z100ffv900-1" LaunchTime="1556490926">
+  <File Type="VDS-TIMING-PB" Name="latcherfloatlatcherfloat_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="latcherfloatlatcherfloat_timing_summary_synth.rpt"/>
+  <File Type="RDS-RDS" Name="latcherfloatlatcherfloat.vds"/>
+  <File Type="PA-TCL" Name="latcherfloatlatcherfloat.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="latcherfloatlatcherfloat_drc_synth.rpt"/>
+  <File Type="RDS-UTIL" Name="latcherfloatlatcherfloat_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="latcherfloatlatcherfloat_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="latcherfloatlatcherfloat.dcp"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PPRDIR/Block_proc.v">
+    <File Path="$PPRDIR/latcherfloatBlock_proc.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/latcherfloat.v">
+    <File Path="$PPRDIR/latcherfloatlatcherfloat.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -26,13 +26,13 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="latcherfloat"/>
+      <Option Name="TopModule" Val="latcherfloatlatcherfloat"/>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
-    <File Path="$PPRDIR/latcherfloat.xdc">
+    <File Path="$PPRDIR/latcherfloatlatcherfloat.xdc">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>

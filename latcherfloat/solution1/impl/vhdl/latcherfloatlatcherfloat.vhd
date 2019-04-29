@@ -9,7 +9,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
-entity latcherfloat is
+entity latcherfloatlatcherfloat is
 port (
     in_V_TDATA : IN STD_LOGIC_VECTOR (31 downto 0);
     out_V_TDATA : OUT STD_LOGIC_VECTOR (31 downto 0);
@@ -23,10 +23,10 @@ port (
 end;
 
 
-architecture behav of latcherfloat is 
+architecture behav of latcherfloatlatcherfloat is 
     attribute CORE_GENERATION_INFO : STRING;
     attribute CORE_GENERATION_INFO of behav : architecture is
-    "latcherfloat,hls_ip_2017_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=1,HLS_INPUT_FIXED=1,HLS_INPUT_PART=xc7z100ffv900-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=dataflow,HLS_SYN_CLOCK=3.096000,HLS_SYN_LAT=0,HLS_SYN_TPT=1,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=37,HLS_SYN_LUT=63}";
+    "latcherfloatlatcherfloat,hls_ip_2017_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=1,HLS_INPUT_FIXED=1,HLS_INPUT_PART=xc7z100ffv900-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=dataflow,HLS_SYN_CLOCK=3.096000,HLS_SYN_LAT=0,HLS_SYN_TPT=1,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=37,HLS_SYN_LUT=63}";
     constant ap_const_lv32_0 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000000";
     constant ap_const_logic_1 : STD_LOGIC := '1';
     constant ap_const_logic_0 : STD_LOGIC := '0';
@@ -44,7 +44,7 @@ architecture behav of latcherfloat is
     signal Block_proc_U0_start_full_n : STD_LOGIC;
     signal Block_proc_U0_start_write : STD_LOGIC;
 
-    component Block_proc IS
+    component latcherfloatBlock_proc IS
     port (
         ap_clk : IN STD_LOGIC;
         ap_rst : IN STD_LOGIC;
@@ -65,7 +65,7 @@ architecture behav of latcherfloat is
 
 
 begin
-    Block_proc_U0 : component Block_proc
+    Block_proc_U0 : component latcherfloatBlock_proc
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst_n_inv,

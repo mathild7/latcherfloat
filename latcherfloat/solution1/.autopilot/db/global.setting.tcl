@@ -22,7 +22,7 @@ set ResetRegisterFlag 0
 set ResetVariableFlag 0
 set fsmEncStyle "onehot"
 set maxFanout "0"
-set RtlPrefix ""
+set RtlPrefix "latcherfloat"
 set ExtraCCFlags ""
 set ExtraCLdFlags ""
 set SynCheckOptions ""
@@ -43,7 +43,7 @@ set SCTraceOption "all"
 set TargetInfo "xc7z100:ffv900:-1"
 set SourceFiles {sc {} c ../../latcherfloat.cpp}
 set SourceFlags {sc {} c {{}}}
-set DirectiveFile {/home/hildeb47/proj/ECE1373_GhostSynth/mods/latcherfloat/latcherfloat/solution1/solution1.directive}
+set DirectiveFile {/root/repo/new/ECE1373_GhostSynth/modules/latcherfloat/latcherfloat/solution1/solution1.directive}
 set TBFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
 set SpecLanguage "C"
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}

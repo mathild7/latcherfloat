@@ -8,7 +8,7 @@
 #
 # Settings for Vivado implementation flow
 #
-set top_module latcherfloat
+set top_module latcherfloatlatcherfloat
 set language verilog
 set family zynq
 set device xc7z100

@@ -5,17 +5,17 @@
 // 
 // ===========================================================
 
-#ifndef _latcherfloat_HH_
-#define _latcherfloat_HH_
+#ifndef _latcherfloatlatcherfloat_HH_
+#define _latcherfloatlatcherfloat_HH_
 
 #include "systemc.h"
 #include "AESL_pkg.h"
 
-#include "Block_proc.h"
+#include "latcherfloatBlock_proc.h"
 
 namespace ap_rtl {
 
-struct latcherfloat : public sc_module {
+struct latcherfloatlatcherfloat : public sc_module {
     // Port declarations 9
     sc_in< sc_lv<32> > in_V_TDATA;
     sc_out< sc_lv<32> > out_V_TDATA;
@@ -29,16 +29,16 @@ struct latcherfloat : public sc_module {
 
 
     // Module declarations
-    latcherfloat(sc_module_name name);
-    SC_HAS_PROCESS(latcherfloat);
+    latcherfloatlatcherfloat(sc_module_name name);
+    SC_HAS_PROCESS(latcherfloatlatcherfloat);
 
-    ~latcherfloat();
+    ~latcherfloatlatcherfloat();
 
     sc_trace_file* mVcdFile;
 
     ofstream mHdltvinHandle;
     ofstream mHdltvoutHandle;
-    Block_proc* Block_proc_U0;
+    latcherfloatBlock_proc* Block_proc_U0;
     sc_signal< sc_logic > ap_rst_n_inv;
     sc_signal< sc_logic > Block_proc_U0_ap_start;
     sc_signal< sc_logic > Block_proc_U0_ap_done;

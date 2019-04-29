@@ -12,9 +12,9 @@ var WshShell = new ActiveXObject( "WScript.Shell" );
 var ProcEnv = WshShell.Environment( "Process" );
 var PathVal = ProcEnv("PATH");
 if ( PathVal.length == 0 ) {
-  PathVal = "/opt/Xilinx_2017_2/Vivado/2017.2/ids_lite/ISE/bin/lin64;/opt/Xilinx_2017_2/Vivado/2017.2/ids_lite/ISE/lib/lin64;/opt/Xilinx_2017_2/Vivado/2017.2/bin;";
+  PathVal = "/opt/Xilinx/SDK/2017.2/bin:/opt/Xilinx/Vivado/2017.2/ids_lite/ISE/bin/lin64;/opt/Xilinx/Vivado/2017.2/ids_lite/ISE/lib/lin64;/opt/Xilinx/Vivado/2017.2/bin;";
 } else {
-  PathVal = "/opt/Xilinx_2017_2/Vivado/2017.2/ids_lite/ISE/bin/lin64;/opt/Xilinx_2017_2/Vivado/2017.2/ids_lite/ISE/lib/lin64;/opt/Xilinx_2017_2/Vivado/2017.2/bin;" + PathVal;
+  PathVal = "/opt/Xilinx/SDK/2017.2/bin:/opt/Xilinx/Vivado/2017.2/ids_lite/ISE/bin/lin64;/opt/Xilinx/Vivado/2017.2/ids_lite/ISE/lib/lin64;/opt/Xilinx/Vivado/2017.2/bin;" + PathVal;
 }
 
 ProcEnv("PATH") = PathVal;
@@ -27,7 +27,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 ISEStep( "vivado",
-         "-log latcherfloat.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source latcherfloat.tcl" );
+         "-log latcherfloatlatcherfloat.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source latcherfloatlatcherfloat.tcl" );
 
 
 

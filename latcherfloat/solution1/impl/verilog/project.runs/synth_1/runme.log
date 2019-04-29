@@ -1,6 +1,6 @@
 
 *** Running vivado
-    with args -log latcherfloat.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source latcherfloat.tcl
+    with args -log latcherfloatlatcherfloat.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source latcherfloatlatcherfloat.tcl
 
 
 ****** Vivado v2017.2 (64-bit)
@@ -8,27 +8,27 @@
   **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 
-source latcherfloat.tcl -notrace
-Command: synth_design -top latcherfloat -part xc7z100ffv900-1 -no_iobuf -mode out_of_context
+source latcherfloatlatcherfloat.tcl -notrace
+Command: synth_design -top latcherfloatlatcherfloat -part xc7z100ffv900-1 -no_iobuf -mode out_of_context
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z100-ffv900'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z100-ffv900'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 13372 
+INFO: Helper process launched with PID 29935 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1221.199 ; gain = 76.996 ; free physical = 2407 ; free virtual = 6946
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1191.949 ; gain = 76.996 ; free physical = 1554 ; free virtual = 26576
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'latcherfloat' [/home/hildeb47/proj/ECE1373_GhostSynth/mods/latcherfloat/latcherfloat/solution1/impl/verilog/latcherfloat.v:12]
-INFO: [Synth 8-638] synthesizing module 'Block_proc' [/home/hildeb47/proj/ECE1373_GhostSynth/mods/latcherfloat/latcherfloat/solution1/impl/verilog/Block_proc.v:10]
+INFO: [Synth 8-638] synthesizing module 'latcherfloatlatcherfloat' [/root/repo/new/ECE1373_GhostSynth/modules/latcherfloat/latcherfloat/solution1/impl/verilog/latcherfloatlatcherfloat.v:12]
+INFO: [Synth 8-638] synthesizing module 'latcherfloatBlock_proc' [/root/repo/new/ECE1373_GhostSynth/modules/latcherfloat/latcherfloat/solution1/impl/verilog/latcherfloatBlock_proc.v:10]
 	Parameter ap_ST_fsm_state1 bound to: 1'b1 
-INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/hildeb47/proj/ECE1373_GhostSynth/mods/latcherfloat/latcherfloat/solution1/impl/verilog/Block_proc.v:51]
-WARNING: [Synth 8-6014] Unused sequential element in_V_TDATA_blk_n_reg was removed.  [/home/hildeb47/proj/ECE1373_GhostSynth/mods/latcherfloat/latcherfloat/solution1/impl/verilog/Block_proc.v:167]
-WARNING: [Synth 8-6014] Unused sequential element out_V_TDATA_blk_n_reg was removed.  [/home/hildeb47/proj/ECE1373_GhostSynth/mods/latcherfloat/latcherfloat/solution1/impl/verilog/Block_proc.v:183]
-WARNING: [Synth 8-6014] Unused sequential element ap_block_state1_reg was removed.  [/home/hildeb47/proj/ECE1373_GhostSynth/mods/latcherfloat/latcherfloat/solution1/impl/verilog/Block_proc.v:211]
-INFO: [Synth 8-256] done synthesizing module 'Block_proc' (1#1) [/home/hildeb47/proj/ECE1373_GhostSynth/mods/latcherfloat/latcherfloat/solution1/impl/verilog/Block_proc.v:10]
-INFO: [Synth 8-256] done synthesizing module 'latcherfloat' (2#1) [/home/hildeb47/proj/ECE1373_GhostSynth/mods/latcherfloat/latcherfloat/solution1/impl/verilog/latcherfloat.v:12]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/root/repo/new/ECE1373_GhostSynth/modules/latcherfloat/latcherfloat/solution1/impl/verilog/latcherfloatBlock_proc.v:51]
+WARNING: [Synth 8-6014] Unused sequential element in_V_TDATA_blk_n_reg was removed.  [/root/repo/new/ECE1373_GhostSynth/modules/latcherfloat/latcherfloat/solution1/impl/verilog/latcherfloatBlock_proc.v:167]
+WARNING: [Synth 8-6014] Unused sequential element out_V_TDATA_blk_n_reg was removed.  [/root/repo/new/ECE1373_GhostSynth/modules/latcherfloat/latcherfloat/solution1/impl/verilog/latcherfloatBlock_proc.v:183]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_state1_reg was removed.  [/root/repo/new/ECE1373_GhostSynth/modules/latcherfloat/latcherfloat/solution1/impl/verilog/latcherfloatBlock_proc.v:211]
+INFO: [Synth 8-256] done synthesizing module 'latcherfloatBlock_proc' (1#1) [/root/repo/new/ECE1373_GhostSynth/modules/latcherfloat/latcherfloat/solution1/impl/verilog/latcherfloatBlock_proc.v:10]
+INFO: [Synth 8-256] done synthesizing module 'latcherfloatlatcherfloat' (2#1) [/root/repo/new/ECE1373_GhostSynth/modules/latcherfloat/latcherfloat/solution1/impl/verilog/latcherfloatlatcherfloat.v:12]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1261.699 ; gain = 117.496 ; free physical = 2418 ; free virtual = 6956
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1232.449 ; gain = 117.496 ; free physical = 1565 ; free virtual = 26587
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -38,39 +38,39 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1261.699 ; gain = 117.496 ; free physical = 2418 ; free virtual = 6957
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1232.449 ; gain = 117.496 ; free physical = 1565 ; free virtual = 26587
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z100ffv900-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/hildeb47/proj/ECE1373_GhostSynth/mods/latcherfloat/latcherfloat/solution1/impl/verilog/latcherfloat.xdc]
-Finished Parsing XDC File [/home/hildeb47/proj/ECE1373_GhostSynth/mods/latcherfloat/latcherfloat/solution1/impl/verilog/latcherfloat.xdc]
+Parsing XDC File [/root/repo/new/ECE1373_GhostSynth/modules/latcherfloat/latcherfloat/solution1/impl/verilog/latcherfloatlatcherfloat.xdc]
+Finished Parsing XDC File [/root/repo/new/ECE1373_GhostSynth/modules/latcherfloat/latcherfloat/solution1/impl/verilog/latcherfloatlatcherfloat.xdc]
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 1651.625 ; gain = 0.000 ; free physical = 2088 ; free virtual = 6627
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1635.340 ; gain = 0.000 ; free physical = 1242 ; free virtual = 26258
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:34 . Memory (MB): peak = 1651.625 ; gain = 507.422 ; free physical = 2175 ; free virtual = 6714
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1635.340 ; gain = 520.387 ; free physical = 1318 ; free virtual = 26344
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z100ffv900-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:34 . Memory (MB): peak = 1651.625 ; gain = 507.422 ; free physical = 2175 ; free virtual = 6714
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1635.340 ; gain = 520.387 ; free physical = 1318 ; free virtual = 26344
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:34 . Memory (MB): peak = 1651.625 ; gain = 507.422 ; free physical = 2177 ; free virtual = 6715
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1635.340 ; gain = 520.387 ; free physical = 1320 ; free virtual = 26345
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:34 . Memory (MB): peak = 1651.625 ; gain = 507.422 ; free physical = 2167 ; free virtual = 6706
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1635.340 ; gain = 520.387 ; free physical = 1311 ; free virtual = 26336
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -96,7 +96,7 @@ Finished RTL Component Statistics
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
 Hierarchical RTL Component report 
-Module Block_proc 
+Module latcherfloatBlock_proc 
 Detailed RTL Component Info : 
 +---Registers : 
 	               32 Bit    Registers := 1     
@@ -122,10 +122,10 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (\Block_proc_U0/ap_CS_fsm_reg[0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Block_proc_U0/ap_done_reg_reg )
-WARNING: [Synth 8-3332] Sequential element (Block_proc_U0/ap_done_reg_reg) is unused and will be removed from module latcherfloat.
-WARNING: [Synth 8-3332] Sequential element (Block_proc_U0/ap_CS_fsm_reg[0]) is unused and will be removed from module latcherfloat.
+WARNING: [Synth 8-3332] Sequential element (Block_proc_U0/ap_done_reg_reg) is unused and will be removed from module latcherfloatlatcherfloat.
+WARNING: [Synth 8-3332] Sequential element (Block_proc_U0/ap_CS_fsm_reg[0]) is unused and will be removed from module latcherfloatlatcherfloat.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:35 . Memory (MB): peak = 1651.625 ; gain = 507.422 ; free physical = 2158 ; free virtual = 6697
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1635.340 ; gain = 520.387 ; free physical = 1302 ; free virtual = 26327
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -137,13 +137,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:44 . Memory (MB): peak = 1651.625 ; gain = 507.422 ; free physical = 2029 ; free virtual = 6568
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1635.340 ; gain = 520.387 ; free physical = 1173 ; free virtual = 26196
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:44 . Memory (MB): peak = 1651.625 ; gain = 507.422 ; free physical = 2028 ; free virtual = 6567
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1635.340 ; gain = 520.387 ; free physical = 1172 ; free virtual = 26195
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -155,7 +155,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:44 . Memory (MB): peak = 1651.625 ; gain = 507.422 ; free physical = 2028 ; free virtual = 6567
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1635.340 ; gain = 520.387 ; free physical = 1172 ; free virtual = 26195
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -179,7 +179,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:44 . Memory (MB): peak = 1651.625 ; gain = 507.422 ; free physical = 2028 ; free virtual = 6567
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1635.340 ; gain = 520.387 ; free physical = 1172 ; free virtual = 26195
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -192,7 +192,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:44 . Memory (MB): peak = 1651.625 ; gain = 507.422 ; free physical = 2028 ; free virtual = 6567
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1635.340 ; gain = 520.387 ; free physical = 1172 ; free virtual = 26195
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -204,25 +204,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:44 . Memory (MB): peak = 1651.625 ; gain = 507.422 ; free physical = 2028 ; free virtual = 6567
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1635.340 ; gain = 520.387 ; free physical = 1172 ; free virtual = 26195
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:44 . Memory (MB): peak = 1651.625 ; gain = 507.422 ; free physical = 2028 ; free virtual = 6567
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1635.340 ; gain = 520.387 ; free physical = 1172 ; free virtual = 26195
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:44 . Memory (MB): peak = 1651.625 ; gain = 507.422 ; free physical = 2028 ; free virtual = 6567
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1635.340 ; gain = 520.387 ; free physical = 1172 ; free virtual = 26195
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:44 . Memory (MB): peak = 1651.625 ; gain = 507.422 ; free physical = 2028 ; free virtual = 6567
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1635.340 ; gain = 520.387 ; free physical = 1172 ; free virtual = 26195
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -245,18 +245,18 @@ Report Cell Usage:
 +------+-----+------+
 
 Report Instance Areas: 
-+------+----------------+-----------+------+
-|      |Instance        |Module     |Cells |
-+------+----------------+-----------+------+
-|1     |top             |           |    40|
-|2     |  Block_proc_U0 |Block_proc |    40|
-+------+----------------+-----------+------+
++------+----------------+-----------------------+------+
+|      |Instance        |Module                 |Cells |
++------+----------------+-----------------------+------+
+|1     |top             |                       |    40|
+|2     |  Block_proc_U0 |latcherfloatBlock_proc |    40|
++------+----------------+-----------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:44 . Memory (MB): peak = 1651.625 ; gain = 507.422 ; free physical = 2028 ; free virtual = 6567
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1635.340 ; gain = 520.387 ; free physical = 1172 ; free virtual = 26195
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1651.625 ; gain = 117.496 ; free physical = 2087 ; free virtual = 6626
-Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:45 . Memory (MB): peak = 1651.633 ; gain = 507.422 ; free physical = 2087 ; free virtual = 6626
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1635.340 ; gain = 117.496 ; free physical = 1229 ; free virtual = 26252
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1635.348 ; gain = 520.387 ; free physical = 1229 ; free virtual = 26252
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -265,7 +265,7 @@ No Unisim elements were transformed.
 
 15 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:47 . Memory (MB): peak = 1651.633 ; gain = 562.824 ; free physical = 2047 ; free virtual = 6586
-INFO: [Common 17-1381] The checkpoint '/home/hildeb47/proj/ECE1373_GhostSynth/mods/latcherfloat/latcherfloat/solution1/impl/verilog/project.runs/synth_1/latcherfloat.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.15 . Memory (MB): peak = 1675.637 ; gain = 0.000 ; free physical = 2047 ; free virtual = 6586
-INFO: [Common 17-206] Exiting Vivado at Wed Apr 24 19:10:49 2019...
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1635.348 ; gain = 546.117 ; free physical = 1190 ; free virtual = 26213
+INFO: [Common 17-1381] The checkpoint '/root/repo/new/ECE1373_GhostSynth/modules/latcherfloat/latcherfloat/solution1/impl/verilog/project.runs/synth_1/latcherfloatlatcherfloat.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 1659.352 ; gain = 0.000 ; free physical = 1191 ; free virtual = 26214
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 28 22:36:02 2019...

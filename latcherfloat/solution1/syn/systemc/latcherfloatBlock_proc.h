@@ -5,8 +5,8 @@
 // 
 // ===========================================================
 
-#ifndef _Block_proc_HH_
-#define _Block_proc_HH_
+#ifndef _latcherfloatBlock_proc_HH_
+#define _latcherfloatBlock_proc_HH_
 
 #include "systemc.h"
 #include "AESL_pkg.h"
@@ -14,7 +14,7 @@
 
 namespace ap_rtl {
 
-struct Block_proc : public sc_module {
+struct latcherfloatBlock_proc : public sc_module {
     // Port declarations 14
     sc_in_clk ap_clk;
     sc_in< sc_logic > ap_rst;
@@ -33,10 +33,10 @@ struct Block_proc : public sc_module {
 
 
     // Module declarations
-    Block_proc(sc_module_name name);
-    SC_HAS_PROCESS(Block_proc);
+    latcherfloatBlock_proc(sc_module_name name);
+    SC_HAS_PROCESS(latcherfloatBlock_proc);
 
-    ~Block_proc();
+    ~latcherfloatBlock_proc();
 
     sc_trace_file* mVcdFile;
 

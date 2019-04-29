@@ -6,4 +6,4 @@
 # ==============================================================
 
 
-/opt/Xilinx_2017_2/Vivado_HLS/2017.2/../../Vivado/2017.2/bin/vivado  -notrace -mode batch -source ipi_example.tcl -tclargs xc7z100ffv900-1 ../xilinx_com_hls_latcherfloat_1_0.zip
+/opt/Xilinx/Vivado_HLS/2017.2/../../Vivado/2017.2/bin/vivado  -notrace -mode batch -source ipi_example.tcl -tclargs xc7z100ffv900-1 ../xilinx_com_hls_latcherfloatlatcherfloat_1_0.zip

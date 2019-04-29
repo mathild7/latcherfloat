@@ -5,19 +5,19 @@
 // 
 // ===========================================================
 
-#include "latcherfloat.h"
+#include "latcherfloatlatcherfloat.h"
 #include "AESL_pkg.h"
 
 using namespace std;
 
 namespace ap_rtl {
 
-const sc_lv<32> latcherfloat::ap_const_lv32_0 = "00000000000000000000000000000000";
-const sc_logic latcherfloat::ap_const_logic_1 = sc_dt::Log_1;
-const sc_logic latcherfloat::ap_const_logic_0 = sc_dt::Log_0;
+const sc_lv<32> latcherfloatlatcherfloat::ap_const_lv32_0 = "00000000000000000000000000000000";
+const sc_logic latcherfloatlatcherfloat::ap_const_logic_1 = sc_dt::Log_1;
+const sc_logic latcherfloatlatcherfloat::ap_const_logic_0 = sc_dt::Log_0;
 
-latcherfloat::latcherfloat(sc_module_name name) : sc_module(name), mVcdFile(0) {
-    Block_proc_U0 = new Block_proc("Block_proc_U0");
+latcherfloatlatcherfloat::latcherfloatlatcherfloat(sc_module_name name) : sc_module(name), mVcdFile(0) {
+    Block_proc_U0 = new latcherfloatBlock_proc("Block_proc_U0");
     Block_proc_U0->ap_clk(ap_clk);
     Block_proc_U0->ap_rst(ap_rst_n_inv);
     Block_proc_U0->ap_start(Block_proc_U0_ap_start);
@@ -60,7 +60,7 @@ latcherfloat::latcherfloat(sc_module_name name) : sc_module(name), mVcdFile(0) {
 
     static int apTFileNum = 0;
     stringstream apTFilenSS;
-    apTFilenSS << "latcherfloat_sc_trace_" << apTFileNum ++;
+    apTFilenSS << "latcherfloatlatcherfloat_sc_trace_" << apTFileNum ++;
     string apTFn = apTFilenSS.str();
     mVcdFile = sc_create_vcd_trace_file(apTFn.c_str());
     mVcdFile->set_time_unit(1, SC_PS);
@@ -92,11 +92,11 @@ latcherfloat::latcherfloat(sc_module_name name) : sc_module(name), mVcdFile(0) {
 #endif
 
     }
-    mHdltvinHandle.open("latcherfloat.hdltvin.dat");
-    mHdltvoutHandle.open("latcherfloat.hdltvout.dat");
+    mHdltvinHandle.open("latcherfloatlatcherfloat.hdltvin.dat");
+    mHdltvoutHandle.open("latcherfloatlatcherfloat.hdltvout.dat");
 }
 
-latcherfloat::~latcherfloat() {
+latcherfloatlatcherfloat::~latcherfloatlatcherfloat() {
     if (mVcdFile) 
         sc_close_vcd_trace_file(mVcdFile);
 
@@ -107,43 +107,43 @@ latcherfloat::~latcherfloat() {
     delete Block_proc_U0;
 }
 
-void latcherfloat::thread_Block_proc_U0_ap_continue() {
+void latcherfloatlatcherfloat::thread_Block_proc_U0_ap_continue() {
     Block_proc_U0_ap_continue = ap_const_logic_1;
 }
 
-void latcherfloat::thread_Block_proc_U0_ap_start() {
+void latcherfloatlatcherfloat::thread_Block_proc_U0_ap_start() {
     Block_proc_U0_ap_start = ap_const_logic_1;
 }
 
-void latcherfloat::thread_Block_proc_U0_start_full_n() {
+void latcherfloatlatcherfloat::thread_Block_proc_U0_start_full_n() {
     Block_proc_U0_start_full_n = ap_const_logic_0;
 }
 
-void latcherfloat::thread_Block_proc_U0_start_write() {
+void latcherfloatlatcherfloat::thread_Block_proc_U0_start_write() {
     Block_proc_U0_start_write = ap_const_logic_0;
 }
 
-void latcherfloat::thread_ap_rst_n_inv() {
+void latcherfloatlatcherfloat::thread_ap_rst_n_inv() {
     ap_rst_n_inv =  (sc_logic) (~ap_rst_n.read());
 }
 
-void latcherfloat::thread_ap_sync_continue() {
+void latcherfloatlatcherfloat::thread_ap_sync_continue() {
     ap_sync_continue = ap_const_logic_0;
 }
 
-void latcherfloat::thread_in_V_TREADY() {
+void latcherfloatlatcherfloat::thread_in_V_TREADY() {
     in_V_TREADY = Block_proc_U0_in_V_TREADY.read();
 }
 
-void latcherfloat::thread_out_V_TDATA() {
+void latcherfloatlatcherfloat::thread_out_V_TDATA() {
     out_V_TDATA = Block_proc_U0_out_V_TDATA.read();
 }
 
-void latcherfloat::thread_out_V_TVALID() {
+void latcherfloatlatcherfloat::thread_out_V_TVALID() {
     out_V_TVALID = Block_proc_U0_out_V_TVALID.read();
 }
 
-void latcherfloat::thread_hdltv_gen() {
+void latcherfloatlatcherfloat::thread_hdltv_gen() {
     const char* dump_tv = std::getenv("AP_WRITE_TV");
     if (!(dump_tv && string(dump_tv) == "on")) return;
 

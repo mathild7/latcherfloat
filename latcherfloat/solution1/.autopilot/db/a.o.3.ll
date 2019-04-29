@@ -1,4 +1,4 @@
-; ModuleID = '/home/hildeb47/proj/ECE1373_GhostSynth/mods/latcherfloat/latcherfloat/solution1/.autopilot/db/a.o.3.bc'
+; ModuleID = '/root/repo/new/ECE1373_GhostSynth/modules/latcherfloat/latcherfloat/solution1/.autopilot/db/a.o.3.bc'
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64-S128"
 target triple = "x86_64-unknown-linux-gnu"
 
@@ -207,13 +207,13 @@ newFuncRoot:
 !45 = metadata !{i32 32, i32 1, metadata !46, null}
 !46 = metadata !{i32 786443, metadata !47, i32 28, i32 4, metadata !48, i32 0} ; [ DW_TAG_lexical_block ]
 !47 = metadata !{i32 786478, i32 0, metadata !48, metadata !"latcherfloat", metadata !"latcherfloat", metadata !"_Z12latcherfloatRN3hls6streamIfEES2_7ap_uintILi1EE", metadata !48, i32 24, metadata !49, i1 false, i1 true, i32 0, i32 0, null, i32 256, i1 false, null, null, null, metadata !62, i32 28} ; [ DW_TAG_subprogram ]
-!48 = metadata !{i32 786473, metadata !"latcherfloat.cpp", metadata !"/home/hildeb47/proj/ECE1373_GhostSynth/mods/latcherfloat", null} ; [ DW_TAG_file_type ]
+!48 = metadata !{i32 786473, metadata !"latcherfloat.cpp", metadata !"/root/repo/new/ECE1373_GhostSynth/modules/latcherfloat", null} ; [ DW_TAG_file_type ]
 !49 = metadata !{i32 786453, i32 0, metadata !"", i32 0, i32 0, i64 0, i64 0, i64 0, i32 0, null, metadata !50, i32 0, i32 0} ; [ DW_TAG_subroutine_type ]
 !50 = metadata !{null, metadata !51, metadata !51, metadata !110}
 !51 = metadata !{i32 786448, null, null, null, i32 0, i64 0, i64 0, i64 0, i32 0, metadata !52} ; [ DW_TAG_reference_type ]
 !52 = metadata !{i32 786434, metadata !53, metadata !"stream<float>", metadata !54, i32 79, i64 32, i64 32, i32 0, i32 0, null, metadata !55, i32 0, null, metadata !108} ; [ DW_TAG_class_type ]
 !53 = metadata !{i32 786489, null, metadata !"hls", metadata !54, i32 69} ; [ DW_TAG_namespace ]
-!54 = metadata !{i32 786473, metadata !"/opt/Xilinx_2017_2/Vivado_HLS/2017.2/common/technology/autopilot/hls_stream.h", metadata !"/home/hildeb47/proj/ECE1373_GhostSynth/mods/latcherfloat", null} ; [ DW_TAG_file_type ]
+!54 = metadata !{i32 786473, metadata !"/opt/Xilinx/Vivado_HLS/2017.2/common/technology/autopilot/hls_stream.h", metadata !"/root/repo/new/ECE1373_GhostSynth/modules/latcherfloat", null} ; [ DW_TAG_file_type ]
 !55 = metadata !{metadata !56, metadata !58, metadata !64, metadata !70, metadata !75, metadata !78, metadata !82, metadata !87, metadata !92, metadata !93, metadata !94, metadata !97, metadata !100, metadata !101, metadata !104}
 !56 = metadata !{i32 786445, metadata !52, metadata !"V", metadata !54, i32 163, i64 32, i64 32, i64 0, i32 0, metadata !57} ; [ DW_TAG_member ]
 !57 = metadata !{i32 786468, null, metadata !"float", null, i32 0, i64 32, i64 32, i64 0, i32 0, i32 4} ; [ DW_TAG_base_type ]
@@ -270,15 +270,15 @@ newFuncRoot:
 !108 = metadata !{metadata !109}
 !109 = metadata !{i32 786479, null, metadata !"__STREAM_T__", metadata !57, null, i32 0, i32 0} ; [ DW_TAG_template_type_parameter ]
 !110 = metadata !{i32 786434, null, metadata !"ap_uint<1>", metadata !111, i32 182, i64 8, i64 8, i32 0, i32 0, null, metadata !112, i32 0, null, metadata !455} ; [ DW_TAG_class_type ]
-!111 = metadata !{i32 786473, metadata !"/opt/Xilinx_2017_2/Vivado_HLS/2017.2/common/technology/autopilot/ap_int.h", metadata !"/home/hildeb47/proj/ECE1373_GhostSynth/mods/latcherfloat", null} ; [ DW_TAG_file_type ]
+!111 = metadata !{i32 786473, metadata !"/opt/Xilinx/Vivado_HLS/2017.2/common/technology/autopilot/ap_int.h", metadata !"/root/repo/new/ECE1373_GhostSynth/modules/latcherfloat", null} ; [ DW_TAG_file_type ]
 !112 = metadata !{metadata !113, metadata !384, metadata !388, metadata !391, metadata !394, metadata !397, metadata !400, metadata !403, metadata !406, metadata !409, metadata !412, metadata !415, metadata !418, metadata !421, metadata !424, metadata !427, metadata !430, metadata !433, metadata !436, metadata !443, metadata !448, metadata !452}
 !113 = metadata !{i32 786460, metadata !110, null, metadata !111, i32 0, i64 0, i64 0, i64 0, i32 0, metadata !114} ; [ DW_TAG_inheritance ]
 !114 = metadata !{i32 786434, null, metadata !"ap_int_base<1, false, true>", metadata !115, i32 1398, i64 8, i64 8, i32 0, i32 0, null, metadata !116, i32 0, null, metadata !381} ; [ DW_TAG_class_type ]
-!115 = metadata !{i32 786473, metadata !"/opt/Xilinx_2017_2/Vivado_HLS/2017.2/common/technology/autopilot/ap_int_syn.h", metadata !"/home/hildeb47/proj/ECE1373_GhostSynth/mods/latcherfloat", null} ; [ DW_TAG_file_type ]
+!115 = metadata !{i32 786473, metadata !"/opt/Xilinx/Vivado_HLS/2017.2/common/technology/autopilot/ap_int_syn.h", metadata !"/root/repo/new/ECE1373_GhostSynth/modules/latcherfloat", null} ; [ DW_TAG_file_type ]
 !116 = metadata !{metadata !117, metadata !131, metadata !135, metadata !138, metadata !142, metadata !146, metadata !150, metadata !154, metadata !157, metadata !160, metadata !164, metadata !168, metadata !173, metadata !178, metadata !183, metadata !186, metadata !190, metadata !193, metadata !196, metadata !201, metadata !206, metadata !211, metadata !212, metadata !216, metadata !219, metadata !222, metadata !225, metadata !228, metadata !231, metadata !234, metadata !237, metadata !240, metadata !243, metadata !246, metadata !249, metadata !257, metadata !260, metadata !263, metadata !266, metadata !269, metadata !272, metadata !275, metadata !278, metadata !281, metadata !284, metadata !287, metadata !290, metadata !293, metadata !294, metadata !298, metadata !301, metadata !302, metadata !303, metadata !304, metadata !305, metadata !306, metadata !309, metadata !310, metadata !313, metadata !314, metadata !315, metadata !316, metadata !317, metadata !318, metadata !321, metadata !322, metadata !323, metadata !326, metadata !327, metadata !330, metadata !331, metadata !335, metadata !339, metadata !340, metadata !343, metadata !344, metadata !348, metadata !349, metadata !350, metadata !351, metadata !354, metadata !355, metadata !356, metadata !357, metadata !358, metadata !359, metadata !360, metadata !361, metadata !362, metadata !363, metadata !364, metadata !365, metadata !375, metadata !378}
 !117 = metadata !{i32 786460, metadata !114, null, metadata !115, i32 0, i64 0, i64 0, i64 0, i32 0, metadata !118} ; [ DW_TAG_inheritance ]
 !118 = metadata !{i32 786434, null, metadata !"ssdm_int<1 + 1024 * 0, false>", metadata !119, i32 3, i64 8, i64 8, i32 0, i32 0, null, metadata !120, i32 0, null, metadata !127} ; [ DW_TAG_class_type ]
-!119 = metadata !{i32 786473, metadata !"/opt/Xilinx_2017_2/Vivado_HLS/2017.2/common/technology/autopilot/etc/autopilot_dt.def", metadata !"/home/hildeb47/proj/ECE1373_GhostSynth/mods/latcherfloat", null} ; [ DW_TAG_file_type ]
+!119 = metadata !{i32 786473, metadata !"/opt/Xilinx/Vivado_HLS/2017.2/common/technology/autopilot/etc/autopilot_dt.def", metadata !"/root/repo/new/ECE1373_GhostSynth/modules/latcherfloat", null} ; [ DW_TAG_file_type ]
 !120 = metadata !{metadata !121, metadata !123}
 !121 = metadata !{i32 786445, metadata !118, metadata !"V", metadata !119, i32 3, i64 1, i64 1, i64 0, i32 0, metadata !122} ; [ DW_TAG_member ]
 !122 = metadata !{i32 786468, null, metadata !"uint1", null, i32 0, i64 1, i64 1, i64 0, i32 0, i32 7} ; [ DW_TAG_base_type ]
